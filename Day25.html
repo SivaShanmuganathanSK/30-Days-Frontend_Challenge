@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Reference</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Tags Reference</h1>
+        <nav>
+            <ul>
+                <li><a href="#basic">Basic Tags</a></li>
+                <li><a href="#formatting">Text Formatting</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#semantic">Semantic Elements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="basic">
+            <h2>Basic Tags</h2>
+            <p>The <code>&lt;html&gt;</code> tag is the root element of an HTML document.</p>
+            <p>The <code>&lt;head&gt;</code> element contains meta-information about the document.</p>
+            <p>The <code>&lt;body&gt;</code> element contains the content of the document.</p>
+            <p>The <code>&lt;title&gt;</code> tag defines the title of the document, shown in the browser's title bar.</p>
+        </section>
+
+        <section id="formatting">
+            <h2>Text Formatting</h2>
+            <p><code>&lt;b&gt;</code> and <code>&lt;strong&gt;</code> for bold text: <b>This is bold</b>, <strong>This is strong</strong>.</p>
+            <p><code>&lt;i&gt;</code> and <code>&lt;em&gt;</code> for italic text: <i>This is italic</i>, <em>This is emphasized</em>.</p>
+            <p><code>&lt;u&gt;</code> for underlined text: <u>This is underlined</u>.</p>
+            <p><code>&lt;s&gt;</code> for strikethrough text: <s>This is strikethrough</s>.</p>
+            <p><code>&lt;mark&gt;</code> for highlighted text: <mark>This is highlighted</mark>.</p>
+            <p><code>&lt;small&gt;</code> for smaller text: <small>This is small</small>.</p>
+            <p><code>&lt;br&gt;</code> for line breaks: First line<br>Second line.</p>
+            <p><code>&lt;hr&gt;</code> for horizontal rules: <hr></p>
+            <p><code>&lt;blockquote&gt;</code> for block quotes: <blockquote>This is a block quote.</blockquote></p>
+            <p><code>&lt;code&gt;</code> for inline code: <code>This is code</code>.</p>
+            <p><code>&lt;pre&gt;</code> for preformatted text:</p>
+            <pre>
+This is preformatted text.
+    It preserves whitespace.
+            </pre>
+            <p><code>&lt;q&gt;</code> for inline quotes: <q>This is an inline quote.</q></p>
+        </section>
+
+        <section id="media">
+            <h2>Media</h2>
+            <p><code>&lt;img&gt;</code> for images:</p>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+            <p><code>&lt;audio&gt;</code> for audio:</p>
+            <audio controls>
+                <source src="audio-file.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <p><code>&lt;video&gt;</code> for video:</p>
+            <video width="320" height="240" controls>
+                <source src="video-file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            <form>
+                <p><code>&lt;input&gt;</code> for user input:</p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="pwd">
+                <br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="0">
+                <br><br>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br><br>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select>
+                <br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="tables">
+            <h2>Tables</h2>
+            <table border="1">
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>30</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Mary</td>
+                        <td>25</td>
+                        <td>Canada</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">End of Table</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="semantic">
+            <h2>Semantic Elements</h2>
+            <p><code>&lt;article&gt;</code> for articles:</p>
+            <article>
+                <h2>Article Title</h2>
+                <p>This is the content of the article.</p>
+            </article>
+            <p><code>&lt;aside&gt;</code> for sidebars:</p>
+            <aside>
+                <p>This is an aside.</p>
+            </aside>
+            <p><code>&lt;footer&gt;</code> for footers:</p>
+            <footer>
+                <p>This is the footer.</p>
+            </footer>
+            <p><code>&lt;header&gt;</code> for headers:</p>
+            <header>
+                <p>This is the header.</p>
+            </header>
+            <p><code>&lt;main&gt;</code> for main content:</p>
+            <main>
+                <p>This is the main content area.</p>
+            </main>
+            <p><code>&lt;nav&gt;</code> for navigation:</p>
+            <nav>
+                <p>This is a navigation area.</p>
+            </nav>
+            <p><code>&lt;section&gt;</code> for sections:</p>
+            <section>
+                <p>This is a section.</p>
+            </section>
+        </section>
+    </main>
+
+</body>
+</html>
